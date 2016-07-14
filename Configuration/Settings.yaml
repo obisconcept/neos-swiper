@@ -1,0 +1,10 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'ObisConcept.NeosSwiper': TRUE
+
+    userInterface:
+      translation:
+        autoInclude:
+          'ObisConcept.NeosSwiper': ['NodeTypes/*']

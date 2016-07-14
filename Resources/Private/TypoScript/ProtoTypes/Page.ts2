@@ -1,0 +1,44 @@
+prototype(TYPO3.Neos:Page) {
+
+    head {
+
+        swiperCss = TYPO3.TypoScript:Tag {
+            @position = 'before stylesheets'
+            tagName = 'link'
+            attributes {
+                id = 'bootstrap-css'
+                media = 'all'
+                rel = 'stylesheet'
+                href = TYPO3.TypoScript:ResourceUri {
+                    path = 'resource://ObisConcept.NeosSwiper/Public/Styles/main.min.css'
+                }
+            }
+        }
+
+        swiperJs = TYPO3.TypoScript:Tag {
+            @position = 'before javascripts'
+            tagName = 'script'
+            attributes {
+                id = 'bootstrap-js'
+                type = 'text/javascript'
+                src = TYPO3.TypoScript:ResourceUri {
+                    path = 'resource://ObisConcept.NeosSwiper/Public/JavaScript/main.min.js'
+                }
+            }
+        }
+
+        swiperBackendJs = TYPO3.TypoScript:Tag {
+            @position = 'after javascripts'
+            tagName = 'script'
+            attributes {
+                type = 'text/javascript'
+                src = TYPO3.TypoScript:ResourceUri {
+                    path = 'resource://ObisConcept.NeosSwiper/Public/JavaScript/backend.min.js'
+                }
+            }
+            @if.onlyRenderWhenNotInLiveWorkspace = ${node.context.workspace.name != 'live'}
+        }
+
+    }
+
+}

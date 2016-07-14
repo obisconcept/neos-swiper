@@ -1,0 +1,27 @@
+prototype(ObisConcept.NeosSwiper:SwiperSlide) < prototype(TYPO3.Neos:Content) {
+
+    contentCollection = TYPO3.Neos:ContentCollection {
+        nodePath = 'contentCollection'
+    }
+
+}
+
+prototype(ObisConcept.NeosSwiper:SwiperCollection) < prototype(TYPO3.Neos:ContentCollection) {
+
+    nodePath = 'swiperCollection'
+
+    itemRenderer = ObisConcept.NeosSwiper:SwiperSlide
+
+    attributes {
+        class = 'swiper-wrapper'
+    }
+
+}
+
+prototype(ObisConcept.NeosSwiper:Swiper) < prototype(TYPO3.Neos:Content) {
+
+    templatePath = 'resource://ObisConcept.NeosSwiperPlugin/Private/Templates/NodeTypes/Swiper.html'
+
+    swiperCollection = ObisConcept.NeosSwiper:SwiperCollection
+
+}
