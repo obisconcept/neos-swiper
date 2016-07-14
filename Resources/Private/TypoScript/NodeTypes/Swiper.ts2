@@ -20,7 +20,7 @@ prototype(ObisConcept.NeosSwiper:SwiperCollection) < prototype(TYPO3.Neos:Conten
 
 prototype(ObisConcept.NeosSwiper:Swiper) < prototype(TYPO3.Neos:Content) {
 
-    templatePath = 'resource://ObisConcept.NeosSwiperPlugin/Private/Templates/NodeTypes/Swiper.html'
+    templatePath = 'resource://ObisConcept.NeosSwiper/Private/Templates/NodeTypes/Swiper.html'
 
     swiperCollection = ObisConcept.NeosSwiper:SwiperCollection
 
