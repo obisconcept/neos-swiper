@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 window.initSwiper = function() {
-    
+
     var swiper = [];
     $('.swiper-container').each(function(index){
 
@@ -21,21 +21,21 @@ window.initSwiper = function() {
         });
 
         $el.find('.prev-slide').on('click', function(){
-            swiper[index].swipePrev();
+            swiper[index].slidePrev();
         });
 
         $el.find('.next-slide').on('click', function(){
-            swiper[index].swipeNext();
+            swiper[index].slideNext();
         });
-        
+
         positionSwipperBullets();
-    
+
         $(window).resize(function() {
-    
+
             updateSwipers();
-    
+
             positionSwipperBullets();
-    
+
         });
 
     });
@@ -68,6 +68,7 @@ window.updateSwipers = function() {
     });
 
 }
+
 /**
  * Swiper 3.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
