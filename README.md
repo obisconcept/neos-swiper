@@ -7,6 +7,10 @@ A Neos CMS package with a Swiper node type
 ## Installation
 Add the package in your site package composer.json
 
-`"require": {
-     "obisconcept/neos-swiper": "~1.0.0"
- }`
+```
+"require": {
+     "obisconcept/neos-swiper": "~1.0"
+ }
+ ```
+## Requirements
+The package requires jQuery which is not provided within.
