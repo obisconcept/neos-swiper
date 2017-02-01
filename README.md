@@ -2,7 +2,7 @@
 A Neos CMS package with a Swiper node type
 
 ## Packages
-- Swiper 3.3.1
+- Swiper 3.4.1
 
 ## Installation
 Add the package in your site package composer.json
