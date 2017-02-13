@@ -1,38 +1,38 @@
-prototype(TYPO3.Neos:Page) {
+prototype(Neos.Neos:Page) {
 
     head {
 
-        swiperCss = TYPO3.TypoScript:Tag {
+        swiperCss = Neos.Fusion:Tag {
             @position = 'before stylesheets'
             tagName = 'link'
             attributes {
                 id = 'bootstrap-css'
                 media = 'all'
                 rel = 'stylesheet'
-                href = TYPO3.TypoScript:ResourceUri {
+                href = Neos.Fusion:ResourceUri {
                     path = 'resource://ObisConcept.NeosSwiper/Public/Styles/main.min.css'
                 }
             }
         }
 
-        swiperJs = TYPO3.TypoScript:Tag {
+        swiperJs = Neos.Fusion:Tag {
             @position = 'before javascripts'
             tagName = 'script'
             attributes {
                 id = 'bootstrap-js'
                 type = 'text/javascript'
-                src = TYPO3.TypoScript:ResourceUri {
+                src = Neos.Fusion:ResourceUri {
                     path = 'resource://ObisConcept.NeosSwiper/Public/JavaScript/main.min.js'
                 }
             }
         }
 
-        swiperBackendJs = TYPO3.TypoScript:Tag {
+        swiperBackendJs = Neos.Fusion:Tag {
             @position = 'after javascripts'
             tagName = 'script'
             attributes {
                 type = 'text/javascript'
-                src = TYPO3.TypoScript:ResourceUri {
+                src = Neos.Fusion:ResourceUri {
                     path = 'resource://ObisConcept.NeosSwiper/Public/JavaScript/backend.min.js'
                 }
             }

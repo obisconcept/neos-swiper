@@ -12,10 +12,12 @@
         "email": "dev@obis-concept.de"
     },
     "description": "A Neos CMS package with a Swiper node type",
-    "license": ["MIT"],
+    "license": [
+        "MIT"
+    ],
     "require": {
-      "neos/neos": "~3.0.0",
-      "neos/nodetypes": "~3.0.0"
+        "neos/neos": "~3.0.0",
+        "neos/nodetypes": "~3.0.0"
     },
     "suggest": {
         "obisconcept/neos-bootstrap": "Provides jQuery which is required by the plugin",
@@ -25,5 +27,10 @@
         "psr-4": {
             "ObisConcept\\NeosSwiper\\": "Classes"
         }
+    },
+    "extra": {
+        "applied-flow-migrations": [
+            "TYPO3.FLOW3-201201261636"
+        ]
     }
 }

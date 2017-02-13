@@ -1,6 +1,6 @@
-{namespace neos=TYPO3\Neos\ViewHelpers}
-{namespace media=TYPO3\Media\ViewHelpers}
-{namespace ts=TYPO3\TypoScript\ViewHelpers}
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
+{namespace ts=Neos\Fusion\ViewHelpers}
 
 <f:if condition="{image}">
     <f:then>
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="{f:uri.resource(package: 'TYPO3.Neos', path: 'Images/dummy-image.svg')}" title="Dummy image" alt="Dummy image" class="img-responsive" />
+                <img src="{f:uri.resource(package: 'Neos.Neos', path: 'Images/dummy-image.svg')}" title="Dummy image" alt="Dummy image" class="img-responsive" />
             </div>
         </f:if>
     </f:else>
