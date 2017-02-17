@@ -9,7 +9,7 @@ Add the package in your site package composer.json
 
 ```
 "require": {
-     "obisconcept/neos-swiper": "~1.0.0"
+     "obisconcept/neos-swiper": "~2.0.0"
  }
  ```
 ## Requirements
