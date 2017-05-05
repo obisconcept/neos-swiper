@@ -16,8 +16,8 @@
         "MIT"
     ],
     "require": {
-        "neos/neos": "~3.0.0",
-        "neos/nodetypes": "~3.0.0"
+        "neos/neos": "^3.0.0",
+        "neos/nodetypes": "^3.0.0"
     },
     "suggest": {
         "obisconcept/neos-bootstrap": "Provides jQuery which is required by the plugin",
