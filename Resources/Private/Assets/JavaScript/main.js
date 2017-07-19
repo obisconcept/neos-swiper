@@ -4,9 +4,10 @@ $(document).ready(function() {
 
 });
 
+var swiper = [];
+
 window.initSwiper = function() {
 
-    var swiper = [];
     $('.swiper-container').each(function(index){
 
         var $el = $(this);
