@@ -1,3 +1,5 @@
+ObisConcept:
+  includeFrontendAssets: true
 Neos:
   Neos:
     fusion:

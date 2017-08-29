@@ -13,6 +13,7 @@ prototype(Neos.Neos:Page) {
                     path = 'resource://ObisConcept.NeosSwiper/Public/Styles/main.min.css'
                 }
             }
+            @if.includeFrontendAssets = ${Configuration.setting('ObisConcept.includeFrontendAssets')}
         }
 
         swiperJs = Neos.Fusion:Tag {
@@ -25,6 +26,7 @@ prototype(Neos.Neos:Page) {
                     path = 'resource://ObisConcept.NeosSwiper/Public/JavaScript/main.min.js'
                 }
             }
+            @if.includeFrontendAssets = ${Configuration.setting('ObisConcept.includeFrontendAssets')}
         }
 
         swiperBackendJs = Neos.Fusion:Tag {
@@ -37,6 +39,7 @@ prototype(Neos.Neos:Page) {
                 }
             }
             @if.onlyRenderWhenNotInLiveWorkspace = ${node.context.workspace.name != 'live'}
+            @if.includeFrontendAssets = ${Configuration.setting('ObisConcept.includeFrontendAssets')}
         }
 
     }
