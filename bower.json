@@ -1,0 +1,21 @@
+{
+  "name": "obisconcept-neos-swiper",
+  "description": "A Neos CMS package with a Swiper node type",
+  "main": [
+    "Resources/Private/Assets/JavaScript/main.js",
+    "Resources/Private/Assets/Styles/main.scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "Configuration",
+    "Resources/Private/Fusion",
+    "Resources/Private/Templates",
+    "Resources/Private/Translations",
+    "composer.json",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 3"
+  }
+}
